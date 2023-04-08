@@ -1,0 +1,266 @@
+/* CAMBIOS GENERALES PARA MIS PÁGINAS HTML */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a{text-decoration: none; color: black; transition: 1s all; font-size: 17px;}
+nav ul li a:hover{color: red; text-decoration: underline;}
+
+li{list-style-type: none; padding: 15px; margin: 10px;}
+
+ul{display: flex;}
+
+.redes-sociales a{font-size: 50px; margin: 20px;}
+
+.img-fluid{width: 100%; height: auto;}
+
+.pb{padding-bottom: 20px;}
+
+.pr{padding-right: 100px;}
+
+/* ESTILOS PARA PÁGINA INDEX.HTML */
+
+.indexGrid{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+}
+header{grid-area: header; display: flex; justify-content: space-between; align-items: center; background-color: beige;}
+main{grid-area: main; align-items: center;}
+footer{grid-area: footer; display: flex; justify-content: space-between; align-items: center; background-color: beige;}
+
+.gridMainIndex{
+    display: grid;
+    grid-template-areas: 
+    "imgPrincipal imgPrincipal imgPrincipal"
+    "titulo-index titulo-index imgIndex1"
+    "parrafo-inicio1 parrafo-inicio1 imgIndex1"
+    "parrafo-inicio2 parrafo-inicio2 imgIndex2";
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: auto auto auto auto;
+}
+
+.imgPrincipal{grid-area: imgPrincipal;}
+.titulo-index{grid-area: titulo-index; text-align: center; padding: 20px;}
+.parrafo-inicio1{grid-area: parrafo-inicio1; text-align: center; padding: 20px;}
+.parrafo-inicio2{grid-area: parrafo-inicio2; text-align: center; padding: 20px;}
+.imgIndex1{grid-area: imgIndex1; padding: 20px;}
+.imgIndex2{grid-area: imgIndex2; padding: 20px;}
+
+/* ESTILOS PARA PÁGINA NOSOTROS.HTML */
+
+.gridMainNosotros{
+    display: grid;
+    grid-template-areas: 
+    "imgPrincipal imgPrincipal imgPrincipal"
+    "titulo-nosotros titulo-nosotros titulo-nosotros"
+    "cuadrado-nosotros1 cuadrado-nosotros2 cuadrado-nosotros3"
+    "linea-negra linea-negra linea-negra"
+    "cuadrado-nosotros4 cuadrado-nosotros5 cuadrado-nosotros6";
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: auto auto auto auto;
+}
+.linea-negra{grid-area: linea-negra;border: 1px solid black;}
+.titulo-nosotros{grid-area: titulo-nosotros; text-align: center; padding-top: 20px; padding-bottom: 20px; text-decoration: underline;}
+.cuadrado-nosotros1{grid-area: cuadrado-nosotros1; text-align: center; margin: 20px;}
+.cuadrado-nosotros2{grid-area: cuadrado-nosotros2; text-align: center; margin: 20px;}
+.cuadrado-nosotros3{grid-area: cuadrado-nosotros3; text-align: center; margin: 20px;}
+.cuadrado-nosotros4{grid-area: cuadrado-nosotros4; text-align: center; margin: 20px;}
+.cuadrado-nosotros5{grid-area: cuadrado-nosotros5; text-align: center; margin: 20px;}
+.cuadrado-nosotros6{grid-area: cuadrado-nosotros6; text-align: center; margin: 20px;}
+.cuadrado-nosotros1 h3{padding-bottom: 15px;}
+.cuadrado-nosotros2 h3{padding-bottom: 15px;}
+.cuadrado-nosotros3 h3{padding-bottom: 15px;}
+.cuadrado-nosotros4 h3{padding-bottom: 15px;}
+.cuadrado-nosotros5 h3{padding-bottom: 15px;}
+.cuadrado-nosotros6 h3{padding-bottom: 15px;}
+.cuadrado-nosotros1 p{padding-top: 10px;}
+.cuadrado-nosotros2 p{padding-top: 10px;}
+.cuadrado-nosotros3 p{padding-top: 10px;}
+.cuadrado-nosotros4 p{padding-top: 10px;}
+.cuadrado-nosotros5 p{padding-top: 10px;}
+.cuadrado-nosotros6 p{padding-top: 10px;}
+
+/* ESTILOS PARA PÁGINA CONTACTO.HTML */
+
+.gridMainContacto{
+    display: grid;
+    grid-template-areas: 
+    "imgPrincipal imgPrincipal imgPrincipal"
+    "titulo-contacto titulo-contacto titulo-contacto"
+    "parrafo-contacto parrafo-contacto parrafo-contacto"
+    "imagen-contacto imagen-contacto imagen-contacto"
+    "linea-negra linea-negra linea-negra"
+    "titulo-contacto2 titulo-contacto2 titulo-contacto2"
+    "contacto contacto contacto";
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: auto auto auto auto;
+}
+
+.titulo-contacto{grid-area: titulo-contacto; padding-top: 20px; padding-bottom: 20px; text-align: center;}
+.parrafo-contacto{grid-area: parrafo-contacto; padding-left: 150px; padding-right: 150px; padding-bottom: 20px; text-align: center;}
+.imagen-contacto{grid-area: imagen-contacto; padding-left: 150px; padding-right: 150px; text-align: center; padding-bottom: 20px;}
+.titulo-contacto2{grid-area: titulo-contacto2; padding: 30px 0px 20px 0px; text-align: center;}
+.contacto{grid-area: contacto; text-align: center; padding-bottom: 20px;}
+.contacto input{margin: 10px;}
+.boton-enviar{padding: 2px; background-color: black; color: white; border-radius: 10px; border: black;}
+.boton-borrar{padding: 2px; background-color: black; color: white; border-radius: 10px; border: black;}
+.boton-borrar:hover{color: red;}
+.boton-enviar:hover{color: red;}
+
+/* ESTILOS PARA PÁGINA UBICACIÓN.HTML */
+
+.gridMainUbicacion{
+    display: grid;
+    grid-template-areas: 
+    "imgPrincipal imgPrincipal imgPrincipal"
+    "titulo-ubicacion titulo-ubicacion titulo-ubicacion"
+    "mapa-ubicacion mapa-ubicacion mapa-ubicacion"
+    "parrafo-ubicacion parrafo-ubicacion parrafo-ubicacion";
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: auto auto auto auto;
+    text-align: center;
+}
+
+.titulo-ubicacion{grid-area: titulo-ubicacion; padding-top: 30px; padding-bottom: 30px;}
+.mapa-ubicacion{grid-area: mapa-ubicacion; padding-bottom: 30px;}
+.parrafo-ubicacion{grid-area: parrafo-ubicacion; padding-bottom: 30px; padding-right: 200px; padding-left: 200px;}
+
+/* DISEÑO PARA MOBILE */
+
+@media (max-width: 768px){
+
+    header{grid-area: header; display: flex; justify-content: space-between; align-items: center; background-color: beige;}
+    ul{display: flex; padding-right: none;}
+    li{list-style-type: none;}
+
+    /* INDEX */
+
+    .indexGrid{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+    
+    header{grid-area: header; display: flex; justify-content: space-between; align-items: center; background-color: beige; overflow: none;}
+    main{grid-area: main; align-items: center;}
+    footer{grid-area: footer; display: flex; justify-content: space-between; align-items: center; background-color: beige;}
+    
+    .gridMainIndex{
+        display: grid;
+        grid-template-areas: 
+        "imgPrincipal imgPrincipal imgPrincipal"
+        "titulo-index titulo-index titulo-index"
+        "parrafo-inicio1 parrafo-inicio1 parrafo-inicio1"
+        "imgIndex1 imgIndex1 imgIndex1"
+        "parrafo-inicio2 parrafo-inicio2 parrafo-inicio2"
+        "imgIndex2 imgIndex2 imgIndex2";
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+    
+    .imgPrincipal{grid-area: imgPrincipal;}
+    .titulo-index{grid-area: titulo-index; text-align: center;}
+    .parrafo-inicio1{grid-area: parrafo-inicio1; text-align: center;}
+    .parrafo-inicio2{grid-area: parrafo-inicio2; text-align: center;}
+    .imgIndex1{grid-area: imgIndex1;}
+    .imgIndex2{grid-area: imgIndex2;}
+    
+    /* NOSOTROS */
+
+    .gridMainNosotros{
+        display: grid;
+        grid-template-areas: 
+        "imgPrincipal imgPrincipal imgPrincipal"
+        "titulo-nosotros titulo-nosotros titulo-nosotros"
+        "cuadrado-nosotros1 cuadrado-nosotros1 cuadrado-nosotros1"
+        "cuadrado-nosotros2 cuadrado-nosotros2 cuadrado-nosotros2"
+        "cuadrado-nosotros3 cuadrado-nosotros3 cuadrado-nosotros3"
+        "linea-negra linea-negra linea-negra"
+        "cuadrado-nosotros4 cuadrado-nosotros4 cuadrado-nosotros4"
+        "cuadrado-nosotros5 cuadrado-nosotros5 cuadrado-nosotros5"
+        "cuadrado-nosotros6 cuadrado-nosotros6 cuadrado-nosotros6";
+        grid-template-columns: 33% 34% 33%;
+        grid-template-rows: auto auto auto auto;
+    }
+    .linea-negra{grid-area: linea-negra;border: 1px solid black;}
+    .titulo-nosotros{grid-area: titulo-nosotros; text-align: center; padding-top: 20px; padding-bottom: 20px; text-decoration: underline;}
+    .cuadrado-nosotros1{grid-area: cuadrado-nosotros1; text-align: center; margin: 20px; background-color: beige; padding-right: 40px; padding-left: 40px; border-radius: 30px;}
+    .cuadrado-nosotros2{grid-area: cuadrado-nosotros2; text-align: center; margin: 20px; background-color: beige; padding-left: 40px; padding-right: 40px; border-radius: 30px;}
+    .cuadrado-nosotros3{grid-area: cuadrado-nosotros3; text-align: center; margin: 20px; background-color: beige; padding-left: 40px; padding-right: 40px; border-radius: 30px;}
+    .cuadrado-nosotros4{grid-area: cuadrado-nosotros4; text-align: center; margin: 20px; background-color: beige; padding-left: 40px; padding-right: 40px; border-radius: 30px;}
+    .cuadrado-nosotros5{grid-area: cuadrado-nosotros5; text-align: center; margin: 20px; background-color: beige; padding-left: 40px; padding-right: 40px; border-radius: 30px;} 
+    .cuadrado-nosotros6{grid-area: cuadrado-nosotros6; text-align: center; margin: 20px; background-color: beige; padding-left: 40px; padding-right: 40px; border-radius: 30px;}
+    .cuadrado-nosotros1 h3{padding-bottom: 15px; padding-top: 15px;}
+    .cuadrado-nosotros2 h3{padding-bottom: 15px; padding-top: 15px;}
+    .cuadrado-nosotros3 h3{padding-bottom: 15px; padding-top: 15px;}
+    .cuadrado-nosotros4 h3{padding-bottom: 15px; padding-top: 15px;}
+    .cuadrado-nosotros5 h3{padding-bottom: 15px; padding-top: 15px;}
+    .cuadrado-nosotros6 h3{padding-bottom: 15px; padding-top: 15px;}
+    .cuadrado-nosotros1 p{padding-top: 10px; padding-bottom: 10px;}
+    .cuadrado-nosotros2 p{padding-top: 10px; padding-bottom: 10px;}
+    .cuadrado-nosotros3 p{padding-top: 10px; padding-bottom: 10px;}
+    .cuadrado-nosotros4 p{padding-top: 10px; padding-bottom: 10px;}
+    .cuadrado-nosotros5 p{padding-top: 10px; padding-bottom: 10px;}
+    .cuadrado-nosotros6 p{padding-top: 10px; padding-bottom: 10px;}
+
+    /* CONTACTO */
+
+    .gridMainContacto{
+        display: grid;
+        grid-template-areas: 
+        "imgPrincipal imgPrincipal imgPrincipal"
+        "titulo-contacto titulo-contacto titulo-contacto"
+        "parrafo-contacto parrafo-contacto parrafo-contacto"
+        "imagen-contacto imagen-contacto imagen-contacto"
+        "linea-negra linea-negra linea-negra"
+        "titulo-contacto2 titulo-contacto2 titulo-contacto2"
+        "contacto contacto contacto";
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+    
+    .titulo-contacto{grid-area: titulo-contacto; padding-top: 30px; padding-bottom: 30px; text-align: center;}
+    .parrafo-contacto{grid-area: parrafo-contacto; padding-left: 80px; padding-right: 80px; padding-bottom: 30px; text-align: center;}
+    .imagen-contacto{grid-area: imagen-contacto; padding-left: 80px; padding-right: 80px; text-align: center; padding-bottom: 30px;}
+    .titulo-contacto2{grid-area: titulo-contacto2; padding: 30px 0px 20px 0px; text-align: center;}
+    .contacto{grid-area: contacto; text-align: center; padding-bottom: 30px;}
+    .contacto input{margin: 10px;}
+    .boton-enviar{padding: 2px; background-color: black; color: white; border-radius: 10px; border: black;}
+    .boton-borrar{padding: 2px; background-color: black; color: white; border-radius: 10px; border: black;}
+    .boton-borrar:hover{color: gray;}
+    .boton-enviar:hover{color: gray;}
+    .pb{padding-bottom: 20px;}
+    .pr{padding-right: 100px;}
+
+    /* UBICACIÓN */
+
+    .gridMainUbicacion{
+        display: grid;
+        grid-template-areas: 
+        "imgPrincipal imgPrincipal imgPrincipal"
+        "titulo-ubicacion titulo-ubicacion titulo-ubicacion"
+        "parrafo-ubicacion parrafo-ubicacion parrafo-ubicacion"
+        "linea-negra linea-negra linea-negra"
+        "mapa-ubicacion mapa-ubicacion mapa-ubicacion";
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        text-align: center;
+    }
+    
+    .titulo-ubicacion{grid-area: titulo-ubicacion; padding-top: 30px; padding-bottom: 30px;}
+    .mapa-ubicacion{grid-area: mapa-ubicacion; padding-bottom: 30px; padding-top: 30px;}
+    .parrafo-ubicacion{grid-area: parrafo-ubicacion; padding-bottom: 30px; padding-right: 100px; padding-left: 100px;}
+    
+}
