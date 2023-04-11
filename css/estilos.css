@@ -136,7 +136,7 @@ footer{grid-area: footer; display: flex; justify-content: space-between; align-i
 
 @media (max-width: 720px){
 
-    header{grid-area: header; display: flex; justify-content: space-between; align-items: center; background-color: beige;}
+    header{grid-area: header; display: flex; justify-content: space-between; align-items: center; background-color: beige; overflow: hidden;}
     ul{display: flex; padding-right: none; flex-wrap: wrap; flex-direction: column;}
     li{list-style-type: none;}
 
