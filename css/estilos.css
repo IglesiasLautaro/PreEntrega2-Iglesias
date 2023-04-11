@@ -134,7 +134,7 @@ footer{grid-area: footer; display: flex; justify-content: space-between; align-i
 
 /* DISEÑO PARA MOBILE */
 
-@media (max-width: 768px){
+@media (max-width: 720px){
 
     header{grid-area: header; display: flex; justify-content: space-between; align-items: center; background-color: beige;}
     ul{display: flex; padding-right: none; flex-wrap: wrap; flex-direction: column;}
