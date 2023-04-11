@@ -8,7 +8,6 @@
 
 a{text-decoration: none; color: black; transition: 1s all; font-size: 17px;}
 nav ul li a:hover{color: red; text-decoration: underline;}
-
 li{list-style-type: none; padding: 15px; margin: 10px;}
 
 ul{display: flex;}
@@ -122,8 +121,8 @@ footer{grid-area: footer; display: flex; justify-content: space-between; align-i
     grid-template-areas: 
     "imgPrincipal imgPrincipal imgPrincipal"
     "titulo-ubicacion titulo-ubicacion titulo-ubicacion"
-    "mapa-ubicacion mapa-ubicacion mapa-ubicacion"
-    "parrafo-ubicacion parrafo-ubicacion parrafo-ubicacion";
+    "parrafo-ubicacion parrafo-ubicacion parrafo-ubicacion"
+    "mapa-ubicacion mapa-ubicacion mapa-ubicacion";
     grid-template-columns: 33% 34% 33%;
     grid-template-rows: auto auto auto auto;
     text-align: center;
@@ -135,10 +134,10 @@ footer{grid-area: footer; display: flex; justify-content: space-between; align-i
 
 /* DISEÑO PARA MOBILE */
 
-@media (max-width: 576px){
+@media (max-width: 768px){
 
     header{grid-area: header; display: flex; justify-content: space-between; align-items: center; background-color: beige;}
-    ul{display: flex; padding-right: none;}
+    ul{display: flex; padding-right: none; flex-wrap: wrap; flex-direction: column;}
     li{list-style-type: none;}
 
     /* INDEX */
